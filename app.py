@@ -66,7 +66,7 @@ def processRequest(req):
 def makeYqlQuery(req):
     result = req.get("result")
     parameters = result.get("parameters")
-    city = parameters.get("geo-city")
+    city = parameters.get("OrderID")
     city = "Miami"
     if city is None:
         return None
@@ -107,6 +107,9 @@ def makeWebhookResult(data):
     print("Response:")
     print(speech)
 
+    if OrderID == 123
+        speech = "Order ID is 123"
+    
     return {
         "speech": speech,
         "displayText": speech,
