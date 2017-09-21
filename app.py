@@ -50,7 +50,7 @@ def webhook():
 
 
 def processRequest(req):
-    if req.get("result").get("action") != "yahooWeatherForecast":
+    if req.get("result").get("action") != "Order_fullfilment":
         return {}
     baseurl = "https://query.yahooapis.com/v1/public/yql?"
     yql_query = makeYqlQuery(req)
@@ -100,7 +100,13 @@ def makeWebhookResult(data):
 
     #speech = "Today in " + location.get('city') + ": " + condition.get('text') + \
      #        ", the temperature is " + condition.get('temp') + " " + units.get('temperature')
-    speech = "Simple response"
+    
+    if city == 010201
+        speech = "010201"
+    else
+        speech = "In else"
+    
+    #speech = "Simple response"
     print("Response:")
     print(speech)
 
