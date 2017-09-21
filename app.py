@@ -103,12 +103,10 @@ def makeWebhookResult(data):
      #        ", the temperature is " + condition.get('temp') + " " + units.get('temperature')
     
 
-    speech = "Simple response"
+    speech = "Uptown Modern Sofa by iNSPIRE Q Classic is shipped from inventory and estimated delivery date is Oct 10,  2017. We offer delivery status updates through Email, Text, and call, would you like to enroll in any of them?"
     print("Response:")
     print(speech)
 
-    if OrderID == 123
-        speech = "Order ID is 123"
     
     return {
         "speech": speech,
